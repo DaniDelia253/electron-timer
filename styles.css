@@ -1,3 +1,51 @@
 /* styles.css */
+@font-face {
+	font-family: "CustomFont";
+	src: url(./assets/Yeseva_One/YesevaOne-Regular.ttf);
+}
+
+html {
+	background: url("./assets/bkg.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	font-family: "CustomFont", Cambria, Cochin, Georgia, Times,
+		"Times New Roman", serif;
+	--main-font: rgb(225, 204, 255);
+	color: var(--main-font);
+	--accentsolid: rgba(73, 36, 124, 0.757);
+	--accenttransp: rgba(73, 36, 124, 0.345);
+	text-shadow: 1px 1px white;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	font-size: 4rem;
+}
+.time-display {
+	background-color: var(--accenttransp);
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 7rem;
+}
+.button-row {
+	margin: 20px;
+}
+button {
+	font-size: 1rem;
+	padding: 5px 10px;
+	background-color: var(--accentsolid);
+	border: 1px solid var(--main-font);
+	border-radius: 30px;
+	color: var(--main-font);
+}
+button:hover {
+	background-color: var(--accenttransp);
+}
 
 /* Add styles here to customize the appearance of your app */

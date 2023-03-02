@@ -7,16 +7,20 @@
 			http-equiv="Content-Security-Policy"
 			content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
 		/>
-		<link href="./styles.css" rel="stylesheet" />
-		<title>Hello World!</title>
+
+		<link href="styles.css" rel="stylesheet" />
+		<title>Timely</title>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		We are using Node.js <span id="node-version"></span>, Chromium
-		<span id="chrome-version"></span>, and Electron
-		<span id="electron-version"></span>.
+		<h1>Timely</h1>
+		<div class="time-display"></div>
+		<div class="button-row">
+			<button data-seconds="300" class="time-btn">5:00</button>
+			<button data-seconds="600" class="time-btn">10:00</button>
+			<button data-seconds="900" class="time-btn">15:00</button>
+			<button data-seconds="1200" class="time-btn">20:00</button>
+		</div>
 
-		<!-- You can also require other files to run in this process -->
 		<script src="./renderer.js"></script>
 	</body>
 </html>

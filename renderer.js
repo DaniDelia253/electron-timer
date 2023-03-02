@@ -5,3 +5,14 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+const timer = document.querySelector(".time-display");
+const timeLeft = "10:00";
+timer.textContent = timeLeft;
+
+const timeButtons = document.querySelectorAll(".time-btn");
+console.log(timeButtons);
+timeButtons.forEach((btn) => btn.addEventListener("click", startTimer));
+
+function startTimer() {
+	console.log(this.dataset.seconds);
+}
